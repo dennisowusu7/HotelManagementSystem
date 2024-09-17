@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.JSInterop
+@using Client
+@using Client.Layout
+
+@using BaseLibrary.DTOs
+@using ClientLibrary.Helpers
+@using ClientLibrary.Services.Contracts
+@using Microsoft.AspNetCore.Components.Authorization
+@using Client.Pages.SharedPages
+@using Syncfusion.Blazor.Popups
+@using Client.Pages.AdministrationPages
+@using Microsoft.AspNetCore.Authorization
+@using Client.ApplicationStates
+@using Syncfusion.Blazor.Buttons
+@using Client.Pages.DepartmentPages
+
+
+
+@inject NavigationManager navManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IUserAccountService accountService
+@inject SfDialogService DialogService
+@inject DepartmentState departmentState
