@@ -8,8 +8,8 @@ namespace BaseLibrary.Entities
 {
     public class SecurityQuestion
     {
-        public DateTime CreateOn { get; set; }
+        public DateTime CreateOn { get; set; } = DateTime.Now;
         public int Id { get; set; }
-        public string Question { get; set; } = string.Empty;
+        public string? Question { get; set; }
     }
 }

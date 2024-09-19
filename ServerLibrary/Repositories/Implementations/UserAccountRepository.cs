@@ -36,7 +36,9 @@ namespace ServerLibrary.Repositories.Implementations
             {
                 Fullname = user.Fullname,
                 Email = user.Email,
-                Password = BCrypt.Net.BCrypt.HashPassword(user.Password)
+                Password = BCrypt.Net.BCrypt.HashPassword(user.Password),
+                Answer = user.Answer,
+                SecurityQuestionId = user.SecurityQuestionId
             });
 
             var checkIfAdminRoleAlreadyExist = await
